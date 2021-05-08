@@ -1,4 +1,3 @@
-# Big-Five-Personality-Test
-Capstone project for CodeAbode
+# FRAME-Temperament-Test
 
 ![alt text](Screenshot/ocean.png)
