@@ -1,4 +1,4 @@
-/*Format the background images*/
+/* Format the background images */
 .fill {
   background-repeat:no-repeat;
   background-size:100%;
@@ -130,6 +130,6 @@ input[type=submit] {
 	background-color:black;
 	padding: 8px ;
 	font-size:20px;
-	border:none;
+	border:4px;
 	outline:none;
 }

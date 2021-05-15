@@ -1,21 +1,19 @@
 <!DOCTYPE HTML> <!-- which version of html we are using -->
 <html>
-
 	<head>
-		<meta charset=“utf-8”>
-		<meta name=“description” content=“Big Five Personality Test”>
-		<title>Big Five Personality Test</title>
+		<meta charset="utf-8">
+		<meta name="description" content="F.R.A.M.E. Test">
+		<title>F.R.A.M.E. Temperament Test</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 
-	<body background="Images/tinnitus.jpg">	
+	<body background="Images/mlcti_blank.png">	
 
 		<div id="background"> <!-- this is the wrap for the whole page -->
-
 			<div id="wrap">
-
+				<img src="Images/mlcti_logo.png" width="150" style="float:left">
 				<header id="header">
-						<h1>Big Five Personality Test</h1>
+						<h1>F.R.A.M.E. Temperament Test</h1>
 				</header>
 
 				<div id="content">
@@ -143,10 +141,10 @@
 						<input type="radio" id="radio1q20" name="q20" value="1"><label for="radio1q20">strongly disagree</label></p>
 						<p>21. I start conversations</p>
 						<p><input type="radio" id="radio5q21" name="q21" value="5"><label for="radio5q21">strongly agree</label>
-						<input type="radio" id="radio4q21" name="q21" value="4"><label for="radio4q12">agree</label>
+						<input type="radio" id="radio4q21" name="q21" value="4"><label for="radio4q21">agree</label>
 						<input type="radio" id="radio3q21" name="q21" value="3" checked><label for="radio3q21">neither agree nor disagree</label>
 						<input type="radio" id="radio2q21" name="q21" value="2"><label for="radio2q21">disagree</label>
-						<input type="radio" id="radio1q21" name="q21" value="1"><label for="radio1q12">strongly disagree</label></p>
+						<input type="radio" id="radio1q21" name="q21" value="1"><label for="radio1q21">strongly disagree</label></p>
 						<p>22. I am not interested in other people's problems</p>
 						<p><input type="radio" id="radio5q22" name="q22" value="5"><label for="radio5q22">strongly agree</label>
 						<input type="radio" id="radio4q22" name="q22" value="4"><label for="radio4q22">agree</label>
@@ -325,23 +323,24 @@
 					</form>
 
 					<!-- Create a graph for the test results -->
+          <div>Each trait should score between zero and forty points.</div>
 					<div id="graph">
 						<h1 id="graph-title">Score</h1>
-						<div id="bar-o">
-							<h1>Openness</h1>
-						</div> 
-						<div id="bar-c">
-							<h1>Conscientiousness</h1>
-						</div><!-- 
-						--><div id="bar-e">
-							<h1>Extraversion</h1>
-						</div><!-- 
-						--><div id="bar-a">
-							<h1>Agreeableness</h1>
-						</div><!-- 
-						--><div id="bar-n">
-							<h1>Neuroticism</h1>
+						<div id="bar-a">
+							<h1>Flexible</h1>
 						</div>
+						<div id="bar-c">
+							<h1>Reliable</h1>
+						</div>
+						<div id="bar-o">
+							<h1>Adventurous</h1>
+						</div> 
+						<div id="bar-n">
+							<h1>Mature</h1>
+						</div>
+						<div id="bar-e">
+							<h1>Extroverted</h1>
+						</div> 
 					</div>
 
 				</div>
@@ -350,11 +349,11 @@
 					<p>Learn more about each trait</p>
 					<!-- Create a navigation bar for the content pages -->
 					<nav id="nav">
-						<a href="myquiza.htm">Openness</a>
-						<a href="myquizb.htm">Conscientiousness</a>
-						<a href="myquizc.htm">Extraversion</a>
-						<a href="myquizd.htm">Agreeableness</a>
-						<a href="myquize.htm">Neuroticism</a>
+						<a href="myquizd.htm">Flexible (Agreeableness)</a>
+						<a href="myquizb.htm">Reliable (Conscientiousness)</a>
+						<a href="myquiza.htm">Adventurous (Openness)</a>
+						<a href="myquize.htm">Mature (vs. Neuroticism)</a>
+						<a href="myquizc.htm">Extroverted (Extroversion)</a>
 					</nav>
 				</footer>
 
