@@ -5,6 +5,7 @@
 		<meta name="description" content="F.R.A.M.E. Test">
 		<title>F.R.A.M.E. Temperament Test</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/charts.css">
 	</head>
 
 	<body background="Images/mlcti_blank.png">	
@@ -322,28 +323,41 @@
 						<input type="submit" name="submit" value="Calculate Your Score">
 					</form>
 
-					<!-- Create a graph for the test results -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://code.highcharts.com/js/themes/dark-unica.js"></script>
+<!-- Create a graph for the test results -->
+<figure class="highcharts-figure">
+  <div id="container"></div>
+  <p class="highcharts-description">
+	FRAME Graph
+  </p>
+</figure>
           <div>Each trait should score between zero and forty points.</div>
 					<div id="graph">
 						<h1 id="graph-title">Score</h1>
 						<div id="bar-a">
-							<h1>Flexible</h1>
+							<div class="score">Flexible</div>
 						</div>
 						<div id="bar-c">
-							<h1>Reliable</h1>
+							<div class="score">Reliable</div>
 						</div>
 						<div id="bar-o">
-							<h1>Adventurous</h1>
+							<div class="score">Adventurous</div>
 						</div> 
 						<div id="bar-n">
-							<h1>Mature</h1>
+							<div class="score">Mature</div>
 						</div>
 						<div id="bar-e">
-							<h1>Extroverted</h1>
+							<div class="score">Extroverted</div>
 						</div> 
 					</div>
-
 				</div>
+
+<script src="js/chart.js"></script>
 
 				<footer id="footer">
 					<p>Learn more about each trait</p>
