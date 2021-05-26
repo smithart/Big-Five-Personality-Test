@@ -1,20 +1,14 @@
-	aResult = 20;
-	cResult = 20;
-	oResult = 20;
-	nResult = 20;
-	eResult = 20;
-
-	Highcharts.chart( 'container', {
+	const chart = Highcharts.chart( 'container', {
   chart: {
-    polar: true,
-    type: 'line'
+    polar: true
+  ,  type: 'area'
   },
   accessibility: {
     description: 'FRAME Results'
   },
   title: {
-    text: 'FRAME Results',
-    x: -80
+    text: 'FRAME Results'
+  /*,  x: -80 */
   },
   pane: {
     size: '80%'
@@ -25,29 +19,30 @@
     lineWidth: 0
   },
   yAxis: {
-    gridLineInterpolation: 'polygon',
+    gridLineInterpolation: 'polygon', // circle or polygon
     lineWidth: 0,
-    min: 0
+    min: 0,
+    max: 40,
+    tickInterval: 10,
+    minorTicks: true,
+    minorTickInterval: 5
   },
   tooltip: {
     shared: true,
-    pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
-  },
-/*  legend: {
-    align: 'right',
-    verticalAlign: 'middle',
-    layout: 'vertical'
-  }, */
+/*    pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>' */
+    pointFormat: '<span style="color:{series.color}"><b>{point.y:,.0f}</b><br/>'
+},
   series: [
-	/*		{
-    name: 'FRAME Desired',
-    data: [43000, 19000, 60000, 35000, 17000, 10000],
-    pointPlacement: 'on'
-  }, */
   {
     name: 'FRAME Actual',
     data: [aResult, cResult, oResult, nResult, eResult],
     pointPlacement: 'on'
+/*,    type: "area" */
+,   dataLabels: {
+      enabled: true,
+      outside: true
+    },
+    showInLegend: false
   }],
   responsive: {
     rules: [{

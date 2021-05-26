@@ -45,11 +45,11 @@
 }
 /*Format the score graph*/
 #graph {
-	width: 300px;
+	width: 30%;
 	margin: 20px auto 0 auto;
 	background-color: gainsboro;
 }
-#graph-title {
+#graph-title tr th {
 	font-size: 2em;
 	text-align: center;
 	color: black;
@@ -57,22 +57,24 @@
 	background-color:slategray;
 	text-transform: uppercase;
 }
-#graph div {
+#graph tr {
 	width: 100%;
 	height: 100%;
-	margin: 10px;
+	margin: 5px;
 	padding: 10px;
 	background-color:gainsboro;
-	display:table-row;
 }
-#graph div h1 {
-	width: 100%;
+#graph tr td {
+	width: 50%;
 	height: 20%;
 	font-size: 20px;
 	font-family: sans-serif;
 	text-align: right;
 	color: black;
-	padding: 10px;
+	padding: 5px;
+}
+#graph tr td:last-child {
+	text-align: left;
 }
 .score {
 	width: 100%;
@@ -82,6 +84,12 @@
 	text-align: right;
 	color: black;
 	padding: 10px;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 /*Format the footer*/
 #footer {
